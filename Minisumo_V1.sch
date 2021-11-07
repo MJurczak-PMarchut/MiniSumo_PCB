@@ -526,21 +526,21 @@ DIN A4, landscape with location and doc. field</description>
 <pin name="PA13" x="76.2" y="-7.62" length="middle" rot="R180"/>
 <pin name="PA12" x="76.2" y="-10.16" length="middle" rot="R180"/>
 <pin name="PA11" x="76.2" y="-12.7" length="middle" rot="R180"/>
-<pin name="PA10" x="76.2" y="-15.24" length="middle" rot="R180"/>
-<pin name="PA9" x="76.2" y="-17.78" length="middle" rot="R180"/>
-<pin name="PA8" x="76.2" y="-20.32" length="middle" rot="R180"/>
-<pin name="PC9" x="76.2" y="-22.86" length="middle" rot="R180"/>
-<pin name="PC8" x="76.2" y="-25.4" length="middle" rot="R180"/>
-<pin name="PC7" x="76.2" y="-27.94" length="middle" rot="R180"/>
-<pin name="PC6" x="76.2" y="-30.48" length="middle" rot="R180"/>
-<pin name="PD15" x="76.2" y="-33.02" length="middle" rot="R180"/>
-<pin name="PD14" x="76.2" y="-35.56" length="middle" rot="R180"/>
-<pin name="PD13" x="76.2" y="-38.1" length="middle" rot="R180"/>
-<pin name="PD12" x="76.2" y="-40.64" length="middle" rot="R180"/>
-<pin name="PD11" x="76.2" y="-43.18" length="middle" rot="R180"/>
-<pin name="PD10" x="76.2" y="-45.72" length="middle" rot="R180"/>
-<pin name="PD9" x="76.2" y="-48.26" length="middle" rot="R180"/>
-<pin name="PD8" x="76.2" y="-50.8" length="middle" rot="R180"/>
+<pin name="PA10" x="76.2" y="-15.24" length="middle" swaplevel="1" rot="R180"/>
+<pin name="PA9" x="76.2" y="-17.78" length="middle" swaplevel="1" rot="R180"/>
+<pin name="PA8" x="76.2" y="-20.32" length="middle" swaplevel="1" rot="R180"/>
+<pin name="PC9" x="76.2" y="-22.86" length="middle" swaplevel="1" rot="R180"/>
+<pin name="PC8" x="76.2" y="-25.4" length="middle" swaplevel="1" rot="R180"/>
+<pin name="PC7" x="76.2" y="-27.94" length="middle" swaplevel="1" rot="R180"/>
+<pin name="PC6" x="76.2" y="-30.48" length="middle" swaplevel="1" rot="R180"/>
+<pin name="PD15" x="76.2" y="-33.02" length="middle" swaplevel="1" rot="R180"/>
+<pin name="PD14" x="76.2" y="-35.56" length="middle" swaplevel="1" rot="R180"/>
+<pin name="PD13" x="76.2" y="-38.1" length="middle" swaplevel="1" rot="R180"/>
+<pin name="PD12" x="76.2" y="-40.64" length="middle" swaplevel="1" rot="R180"/>
+<pin name="PD11" x="76.2" y="-43.18" length="middle" swaplevel="1" rot="R180"/>
+<pin name="PD10" x="76.2" y="-45.72" length="middle" swaplevel="1" rot="R180"/>
+<pin name="PD9" x="76.2" y="-48.26" length="middle" swaplevel="1" rot="R180"/>
+<pin name="PD8" x="76.2" y="-50.8" length="middle" swaplevel="1" rot="R180"/>
 <pin name="PB15" x="76.2" y="-53.34" length="middle" rot="R180"/>
 <pin name="PB14" x="76.2" y="-55.88" length="middle" rot="R180"/>
 <pin name="PB13" x="76.2" y="-58.42" length="middle" rot="R180"/>
@@ -1129,7 +1129,7 @@ Source: &lt;a href="http://www.st.com/content/ccc/resource/technical/document/da
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="LD1086DT33TR" urn="urn:adsk.eagle:component:31688887/1" locally_modified="yes" prefix="CR" library_version="1" library_locally_modified="yes">
+<deviceset name="LD1086DT33TR" urn="urn:adsk.eagle:component:31688887/2" prefix="CR" library_version="2">
 <gates>
 <gate name="A" symbol="LD1086DT33TR" x="0" y="0"/>
 </gates>
@@ -20174,6 +20174,69 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="IC1" gate="G$1" pin="PA11"/>
 <wire x1="121.92" y1="63.5" x2="127" y2="63.5" width="0.1524" layer="91"/>
 <label x="127" y="63.5" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="MD_CS1" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="PA9"/>
+<wire x1="121.92" y1="58.42" x2="127" y2="58.42" width="0.1524" layer="91"/>
+<label x="127" y="58.42" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="MD_NDIS" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="PD15"/>
+<wire x1="121.92" y1="43.18" x2="127" y2="43.18" width="0.1524" layer="91"/>
+<label x="127" y="43.18" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="MD_CS2" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="PD11"/>
+<wire x1="121.92" y1="33.02" x2="127" y2="33.02" width="0.1524" layer="91"/>
+<label x="127" y="33.02" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="MD_DIS1" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="PA8"/>
+<wire x1="121.92" y1="55.88" x2="127" y2="55.88" width="0.1524" layer="91"/>
+<label x="127" y="55.88" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="MD_DIS2" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="PD12"/>
+<wire x1="121.92" y1="35.56" x2="127" y2="35.56" width="0.1524" layer="91"/>
+<label x="127" y="35.56" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="MD_IN1_PWM_A" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="PC6"/>
+<wire x1="121.92" y1="45.72" x2="127" y2="50.8" width="0.1524" layer="91"/>
+<label x="127" y="50.8" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="MD_IN2_DIR_A" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="PC7"/>
+<wire x1="121.92" y1="48.26" x2="127" y2="53.34" width="0.1524" layer="91"/>
+<label x="127" y="53.34" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="MD_IN1_PWM_B" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="PD14"/>
+<wire x1="121.92" y1="40.64" x2="127" y2="40.64" width="0.1524" layer="91"/>
+<label x="127" y="40.64" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="MD_IN2_DIR_B" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="PD13"/>
+<wire x1="121.92" y1="38.1" x2="127" y2="38.1" width="0.1524" layer="91"/>
+<label x="127" y="38.1" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
